@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workflow Initializer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        label { display: block; margin: 10px 0 5px; }
+        input { width: 100%; padding: 5px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Workflow Initializer</h1>
+    <form action="/generate" method="post">
+        <label for="project_name">Project Name:</label>
+        <input type="text" id="project_name" name="project_name" value="my-workflows" required>
+        <label for="service">Service Name:</label>
+        <input type="text" id="service" name="service" value="api" required>
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
